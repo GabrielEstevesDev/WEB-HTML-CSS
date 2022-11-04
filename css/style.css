@@ -1,0 +1,193 @@
+/*on cible le body de chaque page pour mettre une image d'arrière plan*/
+body{
+	background-image: url(../images/background.jpg);
+}
+/*on cible le logo dela page d'accueil, il s'appelle div="logo" html ligne 15 */
+#logo{
+	width: 15%;
+	float: left;
+}
+/*on cible le logo de la page d'accueil pour le faire disparaitre pour une largeur précise, il s'appelle div="logo" html ligne 15 */
+@media screen and (max-width: 1000px){
+	#logo{
+		display:none;
+	}
+}
+/* on cible le titre de chaque page, il s'appelle div="titre" html ligne 17-20 */
+#titre{
+	margin-left: auto ;
+	margin-right: auto ;
+	width: 70%;
+	text-align:center;
+	background-image: linear-gradient(grey,lightgrey);
+	color: #484C62;
+	font-family: calisto MT;
+	font-size: 24px;
+}
+/*on cible la  navbar de chaque page, avec la class="navbar" html ligne 24-28 */
+.navbar{
+	clear: left;
+	border: 1px solid black;
+	background-color: grey!important;
+}
+/*on cible la couleur de la police des differentes pages que contient la navbar de chaque page, avec chaque balise a */
+.nav-link{
+	color: white !important;
+}
+/*lorsque on survole les differents titres des pages la couleur change */
+.nav-link:hover{
+	color:black !important;
+}
+/* on cible la class="gabriel" de la navbar */
+.gabriel{
+	text-decoration:none !important;
+	color: black !important;
+	font-size: 18px;
+}
+/*on cible la div de chaque page pour imposer une largeur et centrer, avec la div="page" html ligne 15-18 */
+#page{
+	width: 80%;
+	margin: 0 auto;
+}
+/*on cible la section de la page d'accueil, avec la balise section html ligne 45 */
+section{
+	margin: 4%;
+	
+}
+/*on cible tous les articles de la page d'accueil, avec la balise article */
+article{
+	border: thick double grey;
+	margin-bottom: 2%;
+	padding: 0% 5% ;
+	box-shadow: 8px 8px 24px black; 
+}
+#photo{
+	float: left;
+	margin: 1%;
+	max-width: 100%;
+}
+/*on cible la balise qui contient le texte du lien afin de changer la couleur de police de la page d'accueil, html ligne 68 */
+#presentation p a{ 
+	 color: black !important; 
+ } 
+/*on cible le tableau de la page de l'emploi du temps, html ligne 45 */
+ table{
+	margin: 3% auto;
+	border: 2px solid grey;
+	box-shadow: 8px 8px 24px black; 
+}
+/*on cible le titre du tableau de la page de l'emploi du temps*/
+caption{
+	text-align: center !important;
+	caption-side: top !important;
+	font-size: 20px;
+	color: blue !important;
+}
+/*on cible les cellules du tableau de la page de l'emploi du temps, html ligne 46 */
+td{
+	border: 2px solid grey;
+	margin: 1%;
+}
+/*on cible la div="mail" afin de changer la couleur de police sur la page edt, html  ligne 119 */
+#mail p b a{
+	color: black !important;
+}
+/*on cible les div="competences" et div="formations" de la page competences , html ligne 40 et ligne 67 */
+#competences, #formations{
+	margin-top: 4% !important;
+}
+/*on cible la div="competences"  de la page competences , html ligne 40 */
+#competences {
+	width: 40%;
+	float: left;
+	color: black !important;
+	text-decoration: none !important;
+	list-style-type: none !important;
+
+}
+/*on cible la div="competences" de la liste de Languages Maitrisées (page competences) , html ligne 50 */
+#competences ul li ul li a{
+	color: black !important;
+}
+/*on cible la div="formations"  de la page competences , html ligne 67 */
+#formations{
+	text-align: center;
+	margin-left: 38%;
+	width: 60%;
+	
+}
+/*on cible les articles de la page competences afin de mettre une bordure , html ligne 67 */
+#formations article{
+	border: 4px solid grey ;
+}
+/*on cible les 2 photos de la page competences et formations avec leurs classes respectives, html ligne 80 et 86 */
+.bac, .brevet{
+	max-width: 100%;
+	margin: 0 auto;
+}
+/*on cible la photos du bac avec sa class="bac" pour la redimensionner de la page competences et formations , html ligne 86 */
+.bac{
+	width: 300px;
+	height: 250px;
+}
+/*on cible les 2 photos de la page competences pour les faire disparaitre à une certaine taille d'écran, html ligne 80 et 86 */
+@media screen and (max-width: 810px){
+	.bac, .brevet{
+		display:none;
+	}
+}
+/* on cible le carousel avec la class="carouusel" de la page loisirs, html ligne 42 */
+.carousel{
+	margin: 4%;
+	box-shadow: 8px 8px 24px black; 
+}
+/* on cible le formulaire avec la div="formulaire" de la page contact, html ligne 43 */
+#formulaire{
+	margin: 4%;
+}
+/*on cible les li pour enlever les puces sur la page de contact, html ligne 50*/
+#formulaire li{
+	list-style: none;
+}
+/*on cible la balise form, html ligne 44*/
+form{
+	width: 70%;
+	border: 1px solid gray;
+	margin: 0 auto;
+	border-radius: 15px;
+	background-color: #585A66;
+	color: white;
+	box-shadow: 8px 8px 40px #180549;; 
+}
+/*on cible les labels du formulaires qui ont la class="perso", html ligne 60*/
+.perso{
+	display: inline-block;
+	width: 25%;
+	text-align: right;
+	margin-right: 3%;
+}
+
+/*on cible la largeur de la zone de texte des champs avec la class="perso_input",html ligne 61 */
+.perso_input{
+	width: 50%;
+}
+/*on augmente la hauteur de la zone de text pour le message avec la div="message", html ligne 70*/
+#message{
+	height: 70px;
+}
+
+/*on cible le bouton de la page contact ,html ligne 72*/
+#bouton{
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: ;
+	border-radius: 15px;
+}
+
+/*lorsque le curseur survole cette élément il y a un changement de couleur, html ligne 72 */
+#bouton:hover{
+	background: black;
+	color: white;
+}
